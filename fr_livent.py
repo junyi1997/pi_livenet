@@ -30,7 +30,7 @@ from firebase_admin import firestore
 
 import BotSpeak
 
-import serial
+# import serial
 import time
 
 import sys,os,dlib,glob,numpy
