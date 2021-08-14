@@ -663,7 +663,7 @@ class Face_Recognizer:
                 #print(">>> Frame ends\n\n")
 
     def run(self):
-        #self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture(0)
         self.process(self.cap)
 
         self.cap.release()
