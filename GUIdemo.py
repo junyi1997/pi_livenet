@@ -27,6 +27,8 @@ class MyApp(object):
         left=(self.win.winfo_screenwidth()-1024)//2#指定視窗置中
         top=(self.win.winfo_screenheight()-768)//2
         self.win.geometry("{:}x{:}+{:}+{:}".format(1024,768,left,top))
+
+        print(self.win.winfo_screenwidth(),self.win.winfo_screenheight())
         #圖片呼叫
         self.photo_background=tk.PhotoImage(file=r"./image/main_background.png")
         self.photo_inSystem=tk.PhotoImage(file=r"./image/in_system.png")
@@ -43,7 +45,7 @@ class MyApp(object):
         
         def inSystem():
             self.hide()
-            fr_livent.main1()
+            fr_livent.main(self.win.winfo_screenwidth(),self.win.winfo_screenheight())
             self.show()
             
         #選擇使用說明
