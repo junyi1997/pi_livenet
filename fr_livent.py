@@ -131,7 +131,7 @@ class Face_Recognizer:
 
         self.db = firestore.client()
 
-        self.ddd=100
+        self.ddd=80
 
         self.model = load_model("./livenet/liveness.model")
         self.le = pickle.loads(open("./livenet/le.pickle", "rb").read())
@@ -200,8 +200,8 @@ class Face_Recognizer:
         lex = endX
         fw = lex - lsx
         fh = ley - lsy
-        rw = 1
-        rh = 1
+        rw = 1.3
+        rh = 1.3
         if lsx - rw*fw > 0:
             lsx = int(lsx - rw*fw)
         else:
@@ -420,7 +420,7 @@ class Face_Recognizer:
                 if self.observed_resual !=  self.observed_resual_bef:   
 
                     
-                    print("in")
+                    # print("in")
                     
                     if  self.std_correct_time>self.correct_count:
                         self.observed_resual_bef = self.observed_resual
