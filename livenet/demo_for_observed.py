@@ -43,8 +43,8 @@ while True:
 
 			fw = endX - startX
 			fh = endY - startY
-			rw = 1.3
-			rh = 0
+			rw = 1
+			rh = 1
 
 			if startX - rw*fw > 0:
 				startX = int(startX - rw*fw)

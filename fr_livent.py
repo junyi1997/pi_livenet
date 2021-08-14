@@ -200,8 +200,8 @@ class Face_Recognizer:
         lex = endX
         fw = lex - lsx
         fh = ley - lsy
-        rw = 2
-        rh = 2
+        rw = 1
+        rh = 1
         if lsx - rw*fw > 0:
             lsx = int(lsx - rw*fw)
         else:
