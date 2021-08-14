@@ -22,7 +22,7 @@ class MyApp(object):
         self.list_time=[]
         """Constructor"""
         self.win = tk.Tk()
-        self.win.attributes("-fullscreen", True)
+        # self.win.attributes("-fullscreen", True)
         self.win.geometry("1024x768")
         self.win.title("雲端註冊與深度辨識真面目系統")#定義標題名稱
         left=(self.win.winfo_screenwidth()-1024)//2#指定視窗置中
@@ -95,7 +95,7 @@ class MyApp(object):
         """"""
         self.hide()
         self.win_Search = tk.Toplevel()
-        self.win_Search.attributes("-fullscreen", True)
+        # self.win_Search.attributes("-fullscreen", True)
         #使用者關閉視窗觸發的事件（第一個刪除視窗，第二個為函式名，即過程）
         self.win_Search.protocol('WM_DELETE_WINDOW',lambda:self.closeWindow(self.win_Search))
         #win_Search.attributes("-fullscreen", True)
