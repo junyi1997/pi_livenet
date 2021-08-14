@@ -44,9 +44,9 @@ class MyApp(object):
         canvas.create_image(512,384, image=self.photo_background)#將背景貼到畫布上
         
         def inSystem():
-            self.hide()
+            # self.hide()
             fr_livent.main(self.win.winfo_screenwidth(),self.win.winfo_screenheight())
-            self.show()
+            # self.show()
             
         #選擇使用說明
         but_System=tk.Button(self.win,image=self.photo_inSystem, command=inSystem) 
