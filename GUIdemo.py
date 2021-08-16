@@ -125,8 +125,8 @@ class MyApp(object):
         frame.place(x=50, y=50, width=800, height=600)
 
         style_head = ttk.Style()
-        style_head.configure("Treeview.Heading", font=('Noto Sans Mono CJK TC Bold', 30), rowheight=200)
-        style_head.configure("Treeview", font=('Noto Sans Mono CJK TC Bold', 30), rowheight=100)
+        style_head.configure("Treeview.Heading", font=('Noto Sans Mono CJK TC Bold', 25), rowheight=200)
+        style_head.configure("Treeview", font=('Noto Sans Mono CJK TC Bold', 25), rowheight=100)
 
         #滾動條
 
