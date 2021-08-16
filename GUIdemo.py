@@ -104,7 +104,7 @@ class MyApp(object):
         self.win_Search.geometry("{:}x{:}+{:}+{:}".format(1024,768,left,top))
         self.win_Search.title("行事曆")
         self.win_Search.photo_background=tk.PhotoImage(file=r"./image/Search_background.png")
-        self.win_Search.photo_back=tk.PhotoImage(file=r"./image/back.png")
+        self.win_Search.photo_back=tk.PhotoImage(file=r"./image/back.PNG")
 
         canvas_width = 1024
         canvas_height =768
